@@ -16,11 +16,21 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           ),
           TextField(
             style: TextStyle(
-              color: Color.fromARGB(255, 174, 0, 0),
+             color: Colors.white
             ),
             decoration: InputDecoration(
-              labelText: "Enter the amound in INR", )
+              hintText: "Enter the amound in INR",
+              hintStyle: TextStyle(
+                color: Colors.white24,
+                fontStyle: FontStyle.italic,
+              ),
+              prefixIcon: Icon(Icons.monetization_on_outlined),
+              prefixIconColor: Colors.white24,
+              filled: true,
+              fillColor: Colors.black,
+              focusedBorder: InputBorder.none
             ),
+          )
          ],
        ),
      )
